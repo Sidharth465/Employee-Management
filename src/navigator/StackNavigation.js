@@ -10,6 +10,9 @@ import OnboardScreen from '../screens/OnboardScreen'
 import {SCREENS} from '../utils/ScreenName'
 import Employees from '../screens/Employees';
 import AddDetails from '../screens/AddDetails';
+import MarkAttendance from '../screens/MarkAttendance';
+import User from '../screens/User';
+import Summary from '../screens/Summary';
 
 
 const Stack = createNativeStackNavigator();
@@ -22,7 +25,10 @@ const StackNavigation = ()=> {
         <Stack.Screen name={SCREENS.REGISTER_SCREEN} component={RegisterScreen} />
         <Stack.Screen name={SCREENS.ONBOARDING_SCREEN} component={OnboardScreen} options={{headerShown:false}}/>
         <Stack.Screen name={SCREENS.EMPLOYEES_SCREEN} component={Employees} options={{headerShown:false,headerTitleAlign:"center",}}/>
-        <Stack.Screen name={SCREENS.ADD_DETAIL_SCREEN} component={AddDetails} options={{headerShown:true,headerTitleAlign:"center",}}/>
+        <Stack.Screen name={SCREENS.ADD_DETAIL_SCREEN} component={AddDetails} options={{headerShown:true,headerTitleAlign:"center",title:"Add Details"}}/>
+        <Stack.Screen name={SCREENS.MARK_ATTENDANCE_SCREEN} component={MarkAttendance} options={{headerShown:false,headerTitleAlign:"center",}}/>
+        <Stack.Screen name={SCREENS.USER_SCREEN} component={User} options={{headerShown:false}}/>
+        <Stack.Screen name={SCREENS.SUMMARY_SCREEN} component={Summary} options={{headerShown:false}}/>
       </Stack.Navigator>
     </NavigationContainer>
   );

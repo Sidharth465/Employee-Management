@@ -23,6 +23,7 @@ const AddDetails = () => {
 
   //handle employee register
   const handleRegisterEmployee = async () => {
+    const uri  =`${BASE_URL}/addEmployee`
     const employeeData = {
       employeeId,
       name,
@@ -36,7 +37,7 @@ const AddDetails = () => {
     console.log("Employee data",employeeData)
    
     axios
-      .post("http://192.168.1.8:5000/addEmployee",employeeData)
+      .post(uri,employeeData)
       .then((response) => {console.log("axios response",response.data)
         Alert.alert(
           'Registration Successful',

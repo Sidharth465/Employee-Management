@@ -57,6 +57,7 @@ const OnboardScreen = () => {
               </Text>
             </Pressable>
             <Pressable
+            onPress={()=>navigation.navigate(SCREENS.MARK_ATTENDANCE_SCREEN)}
               style={{
                 backgroundColor: '#D3CCE3',
                 justifyContent: 'center',
@@ -142,7 +143,10 @@ const OnboardScreen = () => {
               paddingVertical: 20,
               borderRadius: 7,
             }}>
+
+              {/* ----------------SUMMARY REPORT------------------ */}
             <Pressable
+            onPress={()=>navigation.navigate(SCREENS.SUMMARY_SCREEN)}
               style={{
                 flex: 1,
                 flexDirection: 'row',
