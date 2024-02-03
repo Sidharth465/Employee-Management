@@ -162,7 +162,7 @@ const OnboardScreen = () => {
                   width: 45,
                   height: 45,
                   backgroundColor: 'white',
-                  alignItems: 'center',
+                  alignItems: 'center', 
                   justifyContent: 'center',
                   borderRadius: 7,
                 }}>

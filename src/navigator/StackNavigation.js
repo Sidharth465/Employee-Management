@@ -26,9 +26,9 @@ const StackNavigation = ()=> {
         <Stack.Screen name={SCREENS.ONBOARDING_SCREEN} component={OnboardScreen} options={{headerShown:false}}/>
         <Stack.Screen name={SCREENS.EMPLOYEES_SCREEN} component={Employees} options={{headerShown:false,headerTitleAlign:"center",}}/>
         <Stack.Screen name={SCREENS.ADD_DETAIL_SCREEN} component={AddDetails} options={{headerShown:true,headerTitleAlign:"center",title:"Add Details"}}/>
-        <Stack.Screen name={SCREENS.MARK_ATTENDANCE_SCREEN} component={MarkAttendance} options={{headerShown:false,headerTitleAlign:"center",}}/>
+        <Stack.Screen name={SCREENS.MARK_ATTENDANCE_SCREEN} component={MarkAttendance} options={{headerShown:true,headerTitleAlign:"center",title:"Mark Attendance"}}/>
         <Stack.Screen name={SCREENS.USER_SCREEN} component={User} options={{headerShown:false}}/>
-        <Stack.Screen name={SCREENS.SUMMARY_SCREEN} component={Summary} options={{headerShown:false}}/>
+        <Stack.Screen name={SCREENS.SUMMARY_SCREEN} component={Summary} options={{headerShown:true,headerTitleAlign:"center"}}/>
       </Stack.Navigator>
     </NavigationContainer>
   );

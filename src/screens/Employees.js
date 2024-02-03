@@ -55,9 +55,10 @@ const Employees = ({navigation}) => {
           marginVertical: 2,
           borderBottomWidth: 5,
           paddingBottom: 5,
+          // padding:10
         }}>
         <Pressable onPress={() => navigation.goBack()}>
-          <Ionicons name="arrow-back" size={24} color="black" />
+          <Ionicons name="arrow-back" size={30} color="black" />
         </Pressable>
         <Pressable
           style={{

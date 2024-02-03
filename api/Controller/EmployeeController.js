@@ -102,10 +102,10 @@ module.exports = {
       const {month, year} = req.query;
       console.log('query params', month, year);
       //install moment package for startDate and endDate
-      const startDate = moment(`${year}-${month}-01`, 'YYYY-MM-DD')
-        .startOf('month')
+      const startDate = moment(`${year}-${month}-01`, "YYYY-MM-DD")
+        .startOf("month")
         .toDate();
-      const endDate = moment(startDate).endOf('month').toDate();
+      const endDate = moment(startDate).endOf("month").toDate();
 
       // aggregate attendance data using aggregation pipeline of mongoDb database
       const report = await Attendance.aggregate([
@@ -176,10 +176,13 @@ module.exports = {
             employeeId: '$employeeDetails.employeeId',
           },
         },
-        res.status(200).json({report})
-      ]);
+       
+      ])
+      res.status(200).json(report);
+     
     } catch (error) {
       res.status(500).json({message: 'Error fetching summary report'});
+      console.log(error)
     }
   },
 };

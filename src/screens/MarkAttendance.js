@@ -126,6 +126,9 @@ const MarkAttendance = ({navigation}) => {
                 marginRight: 'auto',
                 gap: 20,
                 marginTop: 10,
+                backgroundColor:"#ccffcc",
+                padding:10,
+                borderRadius:8
               }}>
               <AntDesign
                 onPress={gotTOPrevDate}
@@ -142,7 +145,7 @@ const MarkAttendance = ({navigation}) => {
               />
             </View>
 
-            <ScrollView style={{marginHorizontal: 12,marginTop:ASSETS.height*0.09 }}>
+            <ScrollView style={{marginHorizontal: 10,marginTop:ASSETS.height*0.05 }}>
               {employeeWithAttendance.map((item, index) => (
                 <Pressable
                   onPress={() =>
@@ -155,7 +158,7 @@ const MarkAttendance = ({navigation}) => {
                       },
                     })
                   }
-                  style={{flexDirection: 'row', alignItems: 'center', gap: 10}}
+                  style={{flexDirection: 'row', alignItems: 'center', gap: 10,marginBottom:10,borderBottomWidth:0.5}}
                   key={index}>
                   <View
                     style={{
